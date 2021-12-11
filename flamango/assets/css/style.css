@@ -1,0 +1,177 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins';
+}
+:root
+{
+	--orange1: #FFB14D;
+	--orange2: #FDEDDA;
+	--basic:	
+				/*#FFFDFB*/
+				#F6F4EE
+				;
+	--black1: #9096A5;
+	--black2: #3A4F5C;
+	--white: #FFFFFF;
+}
+body
+{
+	/*min-height: 100vh;*/
+	/*overflow: hidden;*/
+	background: var(--basic);
+}
+.container
+{
+	position: relative;
+	width: 100%;
+}
+.navigation
+{
+	position: fixed;
+	width: 304px;
+	height: 100%;
+	transition: 0.5s;
+	/*overflow: hidden;*/
+	padding: 32px;
+}
+.navigation ul
+{
+	position: relative;
+	/*top: 0;*/
+	/*left: 0;*/
+	width: 100%;
+}
+.navigation ul li
+{
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+
+/* nama brand */
+
+.navigation ul li.brand
+{
+	/*background: var(--basic);*/
+	/*border: 5px solid var(--basic);*/
+	box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.07), -4px -4px 13px #FFFFFF, 6px 6px 36px rgba(0, 0, 0, 0.06);
+	border-radius: 18px;
+	height: 56px;
+	padding: 12px 24px;
+	margin-bottom: 32px;
+	display: flex;
+	align-items: center;
+}
+.navigation ul li a .logo
+{
+	text-decoration: none;
+	color: var(--black2);
+	font-weight: 600;
+	font-size: 21px;
+	letter-spacing: 0.05em;
+}
+.navigation ul li.brand a:hover
+{
+	position: static;
+}
+
+/* list navigation */
+.navigation ul li a
+{
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+}
+.navigation ul li a .icon
+{
+	width: 50px;
+	height: 50px;
+	box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.07), -4px -4px 13px #FFFFFF, 6px 6px 36px rgba(0, 0, 0, 0.06);
+	border-radius: 18px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 13px;
+}
+.navigation ul li a .icon svg
+{
+	width: 24px;
+	height: 24px;
+	stroke: var(--black2);
+}
+.navigation ul li a .title
+{
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: var(--black2);
+}
+
+/* list navigation hover */
+.navigation ul li a:hover
+{
+	position: relative;
+	left: -50px;
+}
+.navigation ul li a:hover .icon
+{
+	width: 100px;
+	border: 2px solid var(--orange1);
+	box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.07), -4px -4px 13px #FFFFFF, 6px 6px 36px rgba(0, 0, 0, 0.06);
+	border-radius: 18px;
+	justify-content: flex-end;
+}
+.navigation ul li a:hover .title
+{
+	color: var(--orange1);
+}
+.navigation ul li a:hover .icon svg
+{
+	stroke: var(--orange1);
+}
+
+/* list promo */
+.navigation .list-promo
+{
+	width: 236px;
+	height: 217px;
+	background: var(--orange2);
+	border-radius: 35px;
+	position: relative;
+	margin-top: 100%;
+	padding: 24px 20px 0 20px;
+	overflow: hidden;
+}
+.navigation .list-promo .more-promo
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+.navigation .list-promo .more-promo p
+{
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: var(--black2);
+	margin-right: auto;
+}
+.navigation .list-promo .more-promo svg
+{
+	width: 24px;	
+	height: 24px;
+	stroke: var(--orange1);	
+}
+.navigation .list-promo .promo
+{
+	width: 196px;
+	height: 100px;
+	background: var(--orange1);
+	border-radius: 18px;
+	margin-bottom: 8px;
+}
