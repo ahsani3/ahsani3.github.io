@@ -34,7 +34,8 @@ body
 	width: 304px;
 	height: 100%;
 	transition: 0.5s;
-	/*overflow: hidden;*/
+	overflow-y: auto;
+	/*overflow-x: hidden;*/
 	padding: 32px;
 }
 .navigation ul
@@ -144,14 +145,15 @@ body
 	border-radius: 35px;
 	position: relative;
 	margin-top: 100%;
-	padding: 24px 20px 0 20px;
-	overflow: hidden;
+	/*padding: 24px 20px 0 20px;*/
+	/*overflow: auto;*/
 }
 .navigation .list-promo .more-promo
 {
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
+	padding: 24px 20px 0 20px;
 }
 .navigation .list-promo .more-promo p
 {
@@ -167,11 +169,34 @@ body
 	height: 24px;
 	stroke: var(--orange1);	
 }
-.navigation .list-promo .promo
+.navigation .list-promo .promo-active
+{
+	height: 152px;
+	width: 236px;
+	padding: 0 20px 0 20px;
+	overflow-y: scroll;
+	border-radius: 0 0 35px 35px;
+}
+.navigation .list-promo .promo-active .promo
 {
 	width: 196px;
 	height: 100px;
 	background: var(--orange1);
 	border-radius: 18px;
 	margin-bottom: 8px;
+}
+
+/* scroll */
+::-webkit-scrollbar
+{
+  width: 5px;
+}
+::-webkit-scrollbar-track
+{
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb
+{
+  background: var(--white);
+  border-radius: 5px;
 }
